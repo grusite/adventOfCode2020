@@ -23,7 +23,16 @@ const getResult = (i) =>
 let i = 1
 while (result.length === 0 && i < expenseReport.length) {
   getResult(i)
-  console.log(i)
   i++
 }
-console.log(result.reduce((acc, val) => acc * val))
+
+console.log(
+  'Result day 1',
+  result.reduce((acc, val) => acc * val)
+)
+
+module.exports = {
+  result,
+  totalSumOf2020,
+  getResult,
+}
